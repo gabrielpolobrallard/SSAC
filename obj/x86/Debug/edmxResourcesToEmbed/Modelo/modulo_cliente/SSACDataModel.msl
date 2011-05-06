@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SSACModelStoreContainer" CdmEntityContainer="SSACEntities">
+    <EntitySetMapping Name="ARTICULOS">
+      <EntityTypeMapping TypeName="SSACModel.ARTICULOS">
+        <MappingFragment StoreEntitySet="ARTICULOS">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Familia" ColumnName="Familia" />
+          <ScalarProperty Name="Origen" ColumnName="Origen" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTE">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTE">
+        <MappingFragment StoreEntitySet="CLIENTE">
+          <ScalarProperty Name="Cuenta" ColumnName="Cuenta" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="CondicionIVA" ColumnName="CondicionIVA" />
+          <ScalarProperty Name="CUIT" ColumnName="CUIT" />
+          <ScalarProperty Name="CondicionGanancia" ColumnName="CondicionGanancia" />
+          <ScalarProperty Name="NumeroGanancia" ColumnName="NumeroGanancia" />
+          <ScalarProperty Name="NumeroJubilacion" ColumnName="NumeroJubilacion" />
+          <ScalarProperty Name="CondicionIngBru" ColumnName="CondicionIngBru" />
+          <ScalarProperty Name="NumeroIngBru" ColumnName="NumeroIngBru" />
+          <ScalarProperty Name="CBU" ColumnName="CBU" />
+          <ScalarProperty Name="GananciaCodigo" ColumnName="GananciaCodigo" />
+          <ScalarProperty Name="FechaVtoGanancia" ColumnName="FechaVtoGanancia" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="NombreFantasia" ColumnName="NombreFantasia" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="NroDomicilio" ColumnName="NroDomicilio" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaUltVta" ColumnName="FechaUltVta" />
+          <ScalarProperty Name="FechaDetectado" ColumnName="FechaDetectado" />
+          <ScalarProperty Name="OrigenCliente" ColumnName="OrigenCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTECONDGANANCIAS">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTECONDGANANCIAS">
+        <MappingFragment StoreEntitySet="CLIENTECONDGANANCIAS">
+          <ScalarProperty Name="idCondicionGanancia" ColumnName="idCondicionGanancia" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTECONDICIONIVA">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTECONDICIONIVA">
+        <MappingFragment StoreEntitySet="CLIENTECONDICIONIVA">
+          <ScalarProperty Name="idCondicionIVA" ColumnName="idCondicionIVA" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTECONDINGRBRU">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTECONDINGRBRU">
+        <MappingFragment StoreEntitySet="CLIENTECONDINGRBRU">
+          <ScalarProperty Name="idCondIngrBru" ColumnName="idCondIngrBru" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTECONTACTO">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTECONTACTO">
+        <MappingFragment StoreEntitySet="CLIENTECONTACTO">
+          <ScalarProperty Name="IDTabla" ColumnName="IDTabla" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Direccion1" ColumnName="Direccion1" />
+          <ScalarProperty Name="CodigoPostal1" ColumnName="CodigoPostal1" />
+          <ScalarProperty Name="Pais1" ColumnName="Pais1" />
+          <ScalarProperty Name="Direccion2" ColumnName="Direccion2" />
+          <ScalarProperty Name="CodigoPostal2" ColumnName="CodigoPostal2" />
+          <ScalarProperty Name="Pais2" ColumnName="Pais2" />
+          <ScalarProperty Name="Telefono1" ColumnName="Telefono1" />
+          <ScalarProperty Name="Telefono2" ColumnName="Telefono2" />
+          <ScalarProperty Name="Telefono3" ColumnName="Telefono3" />
+          <ScalarProperty Name="EMail1" ColumnName="EMail1" />
+          <ScalarProperty Name="EMail2" ColumnName="EMail2" />
+          <ScalarProperty Name="EMail3" ColumnName="EMail3" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Localidad1" ColumnName="Localidad1" />
+          <ScalarProperty Name="Localidad2" ColumnName="Localidad2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTEESTABLECIMIENTO">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTEESTABLECIMIENTO">
+        <MappingFragment StoreEntitySet="CLIENTEESTABLECIMIENTO">
+          <ScalarProperty Name="idEstablecimiento" ColumnName="idEstablecimiento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="SupTotal" ColumnName="SupTotal" />
+          <ScalarProperty Name="SupUtil" ColumnName="SupUtil" />
+          <ScalarProperty Name="CantidadLotes" ColumnName="CantidadLotes" />
+          <ScalarProperty Name="CantidadLotesSegim" ColumnName="CantidadLotesSegim" />
+          <ScalarProperty Name="Lugar" ColumnName="Lugar" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTEESTADO">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTEESTADO">
+        <MappingFragment StoreEntitySet="CLIENTEESTADO">
+          <ScalarProperty Name="idEstadoCliente" ColumnName="idEstadoCliente" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTEESTIMAGEN">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTEESTIMAGEN">
+        <MappingFragment StoreEntitySet="CLIENTEESTIMAGEN">
+          <ScalarProperty Name="idTabla" ColumnName="idTabla" />
+          <ScalarProperty Name="Establecimiento" ColumnName="Establecimiento" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Epigrafe" ColumnName="Epigrafe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTELOTE">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTELOTE">
+        <MappingFragment StoreEntitySet="CLIENTELOTE">
+          <ScalarProperty Name="idLote" ColumnName="idLote" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Establecimiento" ColumnName="Establecimiento" />
+          <ScalarProperty Name="SupTotal" ColumnName="SupTotal" />
+          <ScalarProperty Name="SupUtil" ColumnName="SupUtil" />
+          <ScalarProperty Name="TipoSuelo" ColumnName="TipoSuelo" />
+          <ScalarProperty Name="TipoRelieve" ColumnName="TipoRelieve" />
+          <ScalarProperty Name="GeoLatitud" ColumnName="GeoLatitud" />
+          <ScalarProperty Name="GeoLongitud" ColumnName="GeoLongitud" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTELOTEIMAGEN">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTELOTEIMAGEN">
+        <MappingFragment StoreEntitySet="CLIENTELOTEIMAGEN">
+          <ScalarProperty Name="idTabla" ColumnName="idTabla" />
+          <ScalarProperty Name="Lote" ColumnName="Lote" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Epigrafe" ColumnName="Epigrafe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTENOCONFORMIDAD">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTENOCONFORMIDAD">
+        <MappingFragment StoreEntitySet="CLIENTENOCONFORMIDAD">
+          <ScalarProperty Name="IdNoConformidad" ColumnName="IdNoConformidad" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="NoConformidad" ColumnName="NoConformidad" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTEORIGEN">
+      <EntityTypeMapping TypeName="SSACModel.CLIENTEORIGEN">
+        <MappingFragment StoreEntitySet="CLIENTEORIGEN">
+          <ScalarProperty Name="idOrigenCliente" ColumnName="idOrigenCliente" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTAMENTO">
+      <EntityTypeMapping TypeName="SSACModel.DEPARTAMENTO">
+        <MappingFragment StoreEntitySet="DEPARTAMENTO">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="CodigoOncca" ColumnName="CodigoOncca" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOCALIDAD">
+      <EntityTypeMapping TypeName="SSACModel.LOCALIDAD">
+        <MappingFragment StoreEntitySet="LOCALIDAD">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="CodigoOncca" ColumnName="CodigoOncca" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LUGAR">
+      <EntityTypeMapping TypeName="SSACModel.LUGAR">
+        <MappingFragment StoreEntitySet="LUGAR">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="KilometrosAsfalto" ColumnName="KilometrosAsfalto" />
+          <ScalarProperty Name="KilometrosTierra" ColumnName="KilometrosTierra" />
+          <ScalarProperty Name="Localidad" ColumnName="Localidad" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="NroDomicilio" ColumnName="NroDomicilio" />
+          <ScalarProperty Name="Pais" ColumnName="Pais" />
+          <ScalarProperty Name="PuertoOncca" ColumnName="PuertoOncca" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="GeoLatitud" ColumnName="GeoLatitud" />
+          <ScalarProperty Name="GeoLongitud" ColumnName="GeoLongitud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAIS">
+      <EntityTypeMapping TypeName="SSACModel.PAIS">
+        <MappingFragment StoreEntitySet="PAIS">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="CodigoOncca" ColumnName="CodigoOncca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVINCIA">
+      <EntityTypeMapping TypeName="SSACModel.PROVINCIA">
+        <MappingFragment StoreEntitySet="PROVINCIA">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="CodigoOncca" ColumnName="CodigoOncca" />
+          <ScalarProperty Name="Exportado" ColumnName="Exportado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestClientes">
+      <EntityTypeMapping TypeName="SSACModel.TestClientes">
+        <MappingFragment StoreEntitySet="TestClientes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="SSACModel.TestClientes">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="SSACModel.Store.INSERTA_CLIENTES">
+            <ScalarProperty Name="nombre" ParameterName="nombre" />
+            <ScalarProperty Name="id" ParameterName="id" />
+          </InsertFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZONA">
+      <EntityTypeMapping TypeName="SSACModel.ZONA">
+        <MappingFragment StoreEntitySet="ZONA">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

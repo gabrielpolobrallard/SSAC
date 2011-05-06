@@ -1,0 +1,19 @@
+C:\Users\Admin\documents\visual studio 2010\projects\SSAC\SSAC\bin\Debug\SSAC.exe.config
+C:\Users\Admin\Desktop\SSAC\SSAC\bin\Debug\SSAC.exe.config
+C:\Users\Admin\Desktop\SSAC\SSAC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\SSAC\SSAC\obj\x86\Debug\SSAC.ActualizarCliente.resources
+C:\Users\Admin\Desktop\SSAC\SSAC\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Admin\Desktop\SSAC\SSAC\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Admin\Desktop\SSAC\SSAC\bin\Debug\SSAC.exe
+C:\Users\Admin\Desktop\SSAC\SSAC\bin\Debug\SSAC.pdb
+C:\Users\Admin\Desktop\SSAC\SSAC\obj\x86\Debug\SSAC.exe
+C:\Users\Admin\Desktop\SSAC\SSAC\obj\x86\Debug\SSAC.pdb
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\bin\Debug\SSAC.exe.config
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\SSAC.exe
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\SSAC.pdb
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\bin\Debug\SSAC.exe
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\bin\Debug\SSAC.pdb
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\SSAC.ActualizarCliente.resources
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\GenerateResource.write.1.tlog

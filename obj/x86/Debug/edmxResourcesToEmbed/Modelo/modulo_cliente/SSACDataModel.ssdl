@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SSACModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SSACModelStoreContainer">
+    <EntitySet Name="ARTICULOS" EntityType="SSACModel.Store.ARTICULOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTE" EntityType="SSACModel.Store.CLIENTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTECONDGANANCIAS" EntityType="SSACModel.Store.CLIENTECONDGANANCIAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTECONDICIONIVA" EntityType="SSACModel.Store.CLIENTECONDICIONIVA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTECONDINGRBRU" EntityType="SSACModel.Store.CLIENTECONDINGRBRU" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTECONTACTO" EntityType="SSACModel.Store.CLIENTECONTACTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTEESTABLECIMIENTO" EntityType="SSACModel.Store.CLIENTEESTABLECIMIENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTEESTADO" EntityType="SSACModel.Store.CLIENTEESTADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTEESTIMAGEN" EntityType="SSACModel.Store.CLIENTEESTIMAGEN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTELOTE" EntityType="SSACModel.Store.CLIENTELOTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTELOTEIMAGEN" EntityType="SSACModel.Store.CLIENTELOTEIMAGEN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTENOCONFORMIDAD" EntityType="SSACModel.Store.CLIENTENOCONFORMIDAD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTEORIGEN" EntityType="SSACModel.Store.CLIENTEORIGEN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DEPARTAMENTO" EntityType="SSACModel.Store.DEPARTAMENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LOCALIDAD" EntityType="SSACModel.Store.LOCALIDAD" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LUGAR" EntityType="SSACModel.Store.LUGAR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PAIS" EntityType="SSACModel.Store.PAIS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PROVINCIA" EntityType="SSACModel.Store.PROVINCIA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TestClientes" EntityType="SSACModel.Store.TestClientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ZONA" EntityType="SSACModel.Store.ZONA" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CLIENTE_CLIENTECONDGANANCIAS" Association="SSACModel.Store.FK_CLIENTE_CLIENTECONDGANANCIAS">
+      <End Role="CLIENTECONDGANANCIAS" EntitySet="CLIENTECONDGANANCIAS" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_CLIENTECONDICIONIVA" Association="SSACModel.Store.FK_CLIENTE_CLIENTECONDICIONIVA">
+      <End Role="CLIENTECONDICIONIVA" EntitySet="CLIENTECONDICIONIVA" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_CLIENTECONDINGRBRU" Association="SSACModel.Store.FK_CLIENTE_CLIENTECONDINGRBRU">
+      <End Role="CLIENTECONDINGRBRU" EntitySet="CLIENTECONDINGRBRU" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_CLIENTEESTADO" Association="SSACModel.Store.FK_CLIENTE_CLIENTEESTADO">
+      <End Role="CLIENTEESTADO" EntitySet="CLIENTEESTADO" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_CLIENTEORIGEN" Association="SSACModel.Store.FK_CLIENTE_CLIENTEORIGEN">
+      <End Role="CLIENTEORIGEN" EntitySet="CLIENTEORIGEN" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_LOCALIDAD" Association="SSACModel.Store.FK_CLIENTE_LOCALIDAD">
+      <End Role="LOCALIDAD" EntitySet="LOCALIDAD" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_PAIS" Association="SSACModel.Store.FK_CLIENTE_PAIS">
+      <End Role="PAIS" EntitySet="PAIS" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE_ZONA" Association="SSACModel.Store.FK_CLIENTE_ZONA">
+      <End Role="ZONA" EntitySet="ZONA" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTECONTACTO_CLIENTE" Association="SSACModel.Store.FK_CLIENTECONTACTO_CLIENTE">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="CLIENTECONTACTO" EntitySet="CLIENTECONTACTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTEESTABLECIMIENTO_CLIENTE" Association="SSACModel.Store.FK_CLIENTEESTABLECIMIENTO_CLIENTE">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="CLIENTEESTABLECIMIENTO" EntitySet="CLIENTEESTABLECIMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTEESTABLECIMIENTO_LUGAR" Association="SSACModel.Store.FK_CLIENTEESTABLECIMIENTO_LUGAR">
+      <End Role="LUGAR" EntitySet="LUGAR" />
+      <End Role="CLIENTEESTABLECIMIENTO" EntitySet="CLIENTEESTABLECIMIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTEESTIMAGEN_CLIENTEESTABLECIMIENTO" Association="SSACModel.Store.FK_CLIENTEESTIMAGEN_CLIENTEESTABLECIMIENTO">
+      <End Role="CLIENTEESTABLECIMIENTO" EntitySet="CLIENTEESTABLECIMIENTO" />
+      <End Role="CLIENTEESTIMAGEN" EntitySet="CLIENTEESTIMAGEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTELOTE_CLIENTEESTABLECIMIENTO" Association="SSACModel.Store.FK_CLIENTELOTE_CLIENTEESTABLECIMIENTO">
+      <End Role="CLIENTEESTABLECIMIENTO" EntitySet="CLIENTEESTABLECIMIENTO" />
+      <End Role="CLIENTELOTE" EntitySet="CLIENTELOTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTELOTEIMAGEN_CLIENTELOTE" Association="SSACModel.Store.FK_CLIENTELOTEIMAGEN_CLIENTELOTE">
+      <End Role="CLIENTELOTE" EntitySet="CLIENTELOTE" />
+      <End Role="CLIENTELOTEIMAGEN" EntitySet="CLIENTELOTEIMAGEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTENOCONFORMIDAD_CLIENTE" Association="SSACModel.Store.FK_CLIENTENOCONFORMIDAD_CLIENTE">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="CLIENTENOCONFORMIDAD" EntitySet="CLIENTENOCONFORMIDAD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LOCALIDAD_DEPARTAMENTO" Association="SSACModel.Store.FK_LOCALIDAD_DEPARTAMENTO">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
+      <End Role="LOCALIDAD" EntitySet="LOCALIDAD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LOCALIDAD_PROVINCIA" Association="SSACModel.Store.FK_LOCALIDAD_PROVINCIA">
+      <End Role="PROVINCIA" EntitySet="PROVINCIA" />
+      <End Role="LOCALIDAD" EntitySet="LOCALIDAD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LUGAR_LOCALIDAD" Association="SSACModel.Store.FK_LUGAR_LOCALIDAD">
+      <End Role="LOCALIDAD" EntitySet="LOCALIDAD" />
+      <End Role="LUGAR" EntitySet="LUGAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LUGAR_PAIS" Association="SSACModel.Store.FK_LUGAR_PAIS">
+      <End Role="PAIS" EntitySet="PAIS" />
+      <End Role="LUGAR" EntitySet="LUGAR" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ARTICULOS">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="60" />
+    <Property Name="UnidadMedida" Type="varchar" MaxLength="4" />
+    <Property Name="Categoria" Type="varchar" MaxLength="45" />
+    <Property Name="Familia" Type="varchar" MaxLength="45" />
+    <Property Name="Origen" Type="int" />
+    <Property Name="Peso" Type="decimal" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="Cuenta" />
+    </Key>
+    <Property Name="Cuenta" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Observacion" Type="varchar" MaxLength="2000" />
+    <Property Name="CondicionIVA" Type="int" />
+    <Property Name="CUIT" Type="varchar" MaxLength="30" />
+    <Property Name="CondicionGanancia" Type="int" />
+    <Property Name="NumeroGanancia" Type="varchar" MaxLength="30" />
+    <Property Name="NumeroJubilacion" Type="varchar" MaxLength="30" />
+    <Property Name="CondicionIngBru" Type="int" />
+    <Property Name="NumeroIngBru" Type="varchar" MaxLength="30" />
+    <Property Name="CBU" Type="varchar" MaxLength="30" />
+    <Property Name="GananciaCodigo" Type="varchar" MaxLength="4" />
+    <Property Name="FechaVtoGanancia" Type="datetime" />
+    <Property Name="Nombre" Type="varchar" MaxLength="40" />
+    <Property Name="NombreFantasia" Type="varchar" MaxLength="40" />
+    <Property Name="Domicilio" Type="varchar" MaxLength="40" />
+    <Property Name="NroDomicilio" Type="int" />
+    <Property Name="Localidad" Type="varchar" MaxLength="10" />
+    <Property Name="Telefono" Type="varchar" MaxLength="40" />
+    <Property Name="Fax" Type="varchar" MaxLength="40" />
+    <Property Name="EMail" Type="varchar" MaxLength="40" />
+    <Property Name="Pais" Type="varchar" MaxLength="4" />
+    <Property Name="Zona" Type="varchar" MaxLength="4" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="FechaUltVta" Type="datetime" />
+    <Property Name="FechaDetectado" Type="datetime" />
+    <Property Name="OrigenCliente" Type="int" />
+  </EntityType>
+  <EntityType Name="CLIENTECONDGANANCIAS">
+    <Key>
+      <PropertyRef Name="idCondicionGanancia" />
+    </Key>
+    <Property Name="idCondicionGanancia" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="CLIENTECONDICIONIVA">
+    <Key>
+      <PropertyRef Name="idCondicionIVA" />
+    </Key>
+    <Property Name="idCondicionIVA" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CLIENTECONDINGRBRU">
+    <Key>
+      <PropertyRef Name="idCondIngrBru" />
+    </Key>
+    <Property Name="idCondIngrBru" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="nchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="CLIENTECONTACTO">
+    <Key>
+      <PropertyRef Name="IDTabla" />
+    </Key>
+    <Property Name="IDTabla" Type="bigint" Nullable="false" />
+    <Property Name="Cliente" Type="varchar" MaxLength="15" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Cargo" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion1" Type="varchar" MaxLength="250" />
+    <Property Name="CodigoPostal1" Type="varchar" MaxLength="15" />
+    <Property Name="Pais1" Type="varchar" MaxLength="4" />
+    <Property Name="Direccion2" Type="varchar" MaxLength="250" />
+    <Property Name="CodigoPostal2" Type="varchar" MaxLength="15" />
+    <Property Name="Pais2" Type="varchar" MaxLength="4" />
+    <Property Name="Telefono1" Type="varchar" MaxLength="20" />
+    <Property Name="Telefono2" Type="varchar" MaxLength="20" />
+    <Property Name="Telefono3" Type="varchar" MaxLength="20" />
+    <Property Name="EMail1" Type="varchar" MaxLength="250" />
+    <Property Name="EMail2" Type="varchar" MaxLength="250" />
+    <Property Name="EMail3" Type="varchar" MaxLength="250" />
+    <Property Name="Observacion" Type="varchar" MaxLength="500" />
+    <Property Name="Localidad1" Type="varchar" MaxLength="10" />
+    <Property Name="Localidad2" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CLIENTEESTABLECIMIENTO">
+    <Key>
+      <PropertyRef Name="idEstablecimiento" />
+    </Key>
+    <Property Name="idEstablecimiento" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="45" />
+    <Property Name="Cliente" Type="varchar" MaxLength="15" />
+    <Property Name="SupTotal" Type="decimal" />
+    <Property Name="SupUtil" Type="decimal" />
+    <Property Name="CantidadLotes" Type="int" />
+    <Property Name="CantidadLotesSegim" Type="int" />
+    <Property Name="Lugar" Type="varchar" MaxLength="4" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="CLIENTEESTADO">
+    <Key>
+      <PropertyRef Name="idEstadoCliente" />
+    </Key>
+    <Property Name="idEstadoCliente" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CLIENTEESTIMAGEN">
+    <Key>
+      <PropertyRef Name="idTabla" />
+    </Key>
+    <Property Name="idTabla" Type="int" Nullable="false" />
+    <Property Name="Establecimiento" Type="int" />
+    <Property Name="Imagen" Type="image" />
+    <Property Name="Epigrafe" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="CLIENTELOTE">
+    <Key>
+      <PropertyRef Name="idLote" />
+    </Key>
+    <Property Name="idLote" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="45" />
+    <Property Name="Establecimiento" Type="int" />
+    <Property Name="SupTotal" Type="decimal" />
+    <Property Name="SupUtil" Type="decimal" />
+    <Property Name="TipoSuelo" Type="varchar" MaxLength="45" />
+    <Property Name="TipoRelieve" Type="varchar" MaxLength="45" />
+    <Property Name="GeoLatitud" Type="nchar" MaxLength="10" />
+    <Property Name="GeoLongitud" Type="varchar" MaxLength="10" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="CLIENTELOTEIMAGEN">
+    <Key>
+      <PropertyRef Name="idTabla" />
+    </Key>
+    <Property Name="idTabla" Type="int" Nullable="false" />
+    <Property Name="Lote" Type="int" />
+    <Property Name="Imagen" Type="image" />
+    <Property Name="Epigrafe" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="CLIENTENOCONFORMIDAD">
+    <Key>
+      <PropertyRef Name="IdNoConformidad" />
+    </Key>
+    <Property Name="IdNoConformidad" Type="int" Nullable="false" />
+    <Property Name="Cliente" Type="varchar" MaxLength="15" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="NoConformidad" Type="varchar" MaxLength="1000" />
+    <Property Name="Observacion" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="CLIENTEORIGEN">
+    <Key>
+      <PropertyRef Name="idOrigenCliente" />
+    </Key>
+    <Property Name="idOrigenCliente" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="DEPARTAMENTO">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoOncca" Type="varchar" MaxLength="10" />
+    <Property Name="Exportado" Type="int" />
+  </EntityType>
+  <EntityType Name="LOCALIDAD">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Departamento" Type="varchar" MaxLength="4" />
+    <Property Name="Provincia" Type="varchar" MaxLength="4" />
+    <Property Name="CodigoOncca" Type="varchar" MaxLength="10" />
+    <Property Name="Exportado" Type="int" />
+  </EntityType>
+  <EntityType Name="LUGAR">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="KilometrosAsfalto" Type="money" />
+    <Property Name="KilometrosTierra" Type="money" />
+    <Property Name="Localidad" Type="varchar" MaxLength="10" />
+    <Property Name="Domicilio" Type="varchar" MaxLength="40" />
+    <Property Name="NroDomicilio" Type="int" />
+    <Property Name="Pais" Type="varchar" MaxLength="4" />
+    <Property Name="PuertoOncca" Type="varchar" MaxLength="10" />
+    <Property Name="Cliente" Type="varchar" MaxLength="15" />
+    <Property Name="GeoLatitud" Type="varchar" MaxLength="15" />
+    <Property Name="GeoLongitud" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="PAIS">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="CodigoOncca" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PROVINCIA">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoOncca" Type="varchar" MaxLength="10" />
+    <Property Name="Exportado" Type="int" />
+  </EntityType>
+  <EntityType Name="TestClientes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ZONA">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <Association Name="FK_CLIENTE_CLIENTECONDGANANCIAS">
+    <End Role="CLIENTECONDGANANCIAS" Type="SSACModel.Store.CLIENTECONDGANANCIAS" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTECONDGANANCIAS">
+        <PropertyRef Name="idCondicionGanancia" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="CondicionGanancia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_CLIENTECONDICIONIVA">
+    <End Role="CLIENTECONDICIONIVA" Type="SSACModel.Store.CLIENTECONDICIONIVA" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTECONDICIONIVA">
+        <PropertyRef Name="idCondicionIVA" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="CondicionIVA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_CLIENTECONDINGRBRU">
+    <End Role="CLIENTECONDINGRBRU" Type="SSACModel.Store.CLIENTECONDINGRBRU" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTECONDINGRBRU">
+        <PropertyRef Name="idCondIngrBru" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="CondicionIngBru" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_CLIENTEESTADO">
+    <End Role="CLIENTEESTADO" Type="SSACModel.Store.CLIENTEESTADO" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTEESTADO">
+        <PropertyRef Name="idEstadoCliente" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="Estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_CLIENTEORIGEN">
+    <End Role="CLIENTEORIGEN" Type="SSACModel.Store.CLIENTEORIGEN" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTEORIGEN">
+        <PropertyRef Name="idOrigenCliente" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="OrigenCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_LOCALIDAD">
+    <End Role="LOCALIDAD" Type="SSACModel.Store.LOCALIDAD" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOCALIDAD">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="Localidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_PAIS">
+    <End Role="PAIS" Type="SSACModel.Store.PAIS" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAIS">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="Pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE_ZONA">
+    <End Role="ZONA" Type="SSACModel.Store.ZONA" Multiplicity="0..1" />
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ZONA">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="Zona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTECONTACTO_CLIENTE">
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="0..1" />
+    <End Role="CLIENTECONTACTO" Type="SSACModel.Store.CLIENTECONTACTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="Cuenta" />
+      </Principal>
+      <Dependent Role="CLIENTECONTACTO">
+        <PropertyRef Name="Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTEESTABLECIMIENTO_CLIENTE">
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="0..1" />
+    <End Role="CLIENTEESTABLECIMIENTO" Type="SSACModel.Store.CLIENTEESTABLECIMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="Cuenta" />
+      </Principal>
+      <Dependent Role="CLIENTEESTABLECIMIENTO">
+        <PropertyRef Name="Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTEESTABLECIMIENTO_LUGAR">
+    <End Role="LUGAR" Type="SSACModel.Store.LUGAR" Multiplicity="0..1" />
+    <End Role="CLIENTEESTABLECIMIENTO" Type="SSACModel.Store.CLIENTEESTABLECIMIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LUGAR">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CLIENTEESTABLECIMIENTO">
+        <PropertyRef Name="Lugar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTEESTIMAGEN_CLIENTEESTABLECIMIENTO">
+    <End Role="CLIENTEESTABLECIMIENTO" Type="SSACModel.Store.CLIENTEESTABLECIMIENTO" Multiplicity="0..1" />
+    <End Role="CLIENTEESTIMAGEN" Type="SSACModel.Store.CLIENTEESTIMAGEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTEESTABLECIMIENTO">
+        <PropertyRef Name="idEstablecimiento" />
+      </Principal>
+      <Dependent Role="CLIENTEESTIMAGEN">
+        <PropertyRef Name="Establecimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTELOTE_CLIENTEESTABLECIMIENTO">
+    <End Role="CLIENTEESTABLECIMIENTO" Type="SSACModel.Store.CLIENTEESTABLECIMIENTO" Multiplicity="0..1" />
+    <End Role="CLIENTELOTE" Type="SSACModel.Store.CLIENTELOTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTEESTABLECIMIENTO">
+        <PropertyRef Name="idEstablecimiento" />
+      </Principal>
+      <Dependent Role="CLIENTELOTE">
+        <PropertyRef Name="Establecimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTELOTEIMAGEN_CLIENTELOTE">
+    <End Role="CLIENTELOTE" Type="SSACModel.Store.CLIENTELOTE" Multiplicity="0..1" />
+    <End Role="CLIENTELOTEIMAGEN" Type="SSACModel.Store.CLIENTELOTEIMAGEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTELOTE">
+        <PropertyRef Name="idLote" />
+      </Principal>
+      <Dependent Role="CLIENTELOTEIMAGEN">
+        <PropertyRef Name="Lote" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTENOCONFORMIDAD_CLIENTE">
+    <End Role="CLIENTE" Type="SSACModel.Store.CLIENTE" Multiplicity="0..1" />
+    <End Role="CLIENTENOCONFORMIDAD" Type="SSACModel.Store.CLIENTENOCONFORMIDAD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="Cuenta" />
+      </Principal>
+      <Dependent Role="CLIENTENOCONFORMIDAD">
+        <PropertyRef Name="Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LOCALIDAD_DEPARTAMENTO">
+    <End Role="DEPARTAMENTO" Type="SSACModel.Store.DEPARTAMENTO" Multiplicity="0..1" />
+    <End Role="LOCALIDAD" Type="SSACModel.Store.LOCALIDAD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="LOCALIDAD">
+        <PropertyRef Name="Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LOCALIDAD_PROVINCIA">
+    <End Role="PROVINCIA" Type="SSACModel.Store.PROVINCIA" Multiplicity="0..1" />
+    <End Role="LOCALIDAD" Type="SSACModel.Store.LOCALIDAD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVINCIA">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="LOCALIDAD">
+        <PropertyRef Name="Provincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LUGAR_LOCALIDAD">
+    <End Role="LOCALIDAD" Type="SSACModel.Store.LOCALIDAD" Multiplicity="0..1" />
+    <End Role="LUGAR" Type="SSACModel.Store.LUGAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOCALIDAD">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="LUGAR">
+        <PropertyRef Name="Localidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LUGAR_PAIS">
+    <End Role="PAIS" Type="SSACModel.Store.PAIS" Multiplicity="0..1" />
+    <End Role="LUGAR" Type="SSACModel.Store.LUGAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAIS">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="LUGAR">
+        <PropertyRef Name="Pais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="INSERTA_CLIENTES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+  </Function>
+</Schema>
