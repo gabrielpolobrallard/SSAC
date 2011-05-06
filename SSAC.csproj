@@ -188,6 +188,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SSACDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Modelo\modulo_cliente\SSACObjectModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>SSACObjectModel.Context.cs</LastGenOutput>

@@ -24,7 +24,6 @@
           <EntitySet Name="LUGAR" EntityType="SSACModel.Store.LUGAR" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="PAIS" EntityType="SSACModel.Store.PAIS" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="PROVINCIA" EntityType="SSACModel.Store.PROVINCIA" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="TestClientes" EntityType="SSACModel.Store.TestClientes" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ZONA" EntityType="SSACModel.Store.ZONA" store:Type="Tables" Schema="dbo" />
           <AssociationSet Name="FK_CLIENTE_CLIENTECONDGANANCIAS" Association="SSACModel.Store.FK_CLIENTE_CLIENTECONDGANANCIAS">
             <End Role="CLIENTECONDGANANCIAS" EntitySet="CLIENTECONDGANANCIAS" />
@@ -315,13 +314,6 @@
           <Property Name="Descripcion" Type="varchar" MaxLength="50" />
           <Property Name="CodigoOncca" Type="varchar" MaxLength="10" />
           <Property Name="Exportado" Type="int" />
-        </EntityType>
-        <EntityType Name="TestClientes">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="nombre" Type="nchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="ZONA">
           <Key>
@@ -1322,18 +1314,6 @@
             <ScalarProperty Name="CodigoOncca" ColumnName="CodigoOncca" />
             <ScalarProperty Name="Exportado" ColumnName="Exportado" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
-          <EntitySetMapping Name="TestClientes"><EntityTypeMapping TypeName="SSACModel.TestClientes"><MappingFragment StoreEntitySet="TestClientes">
-            <ScalarProperty Name="id" ColumnName="id" />
-            <ScalarProperty Name="nombre" ColumnName="nombre" />
-          </MappingFragment></EntityTypeMapping>
-            <EntityTypeMapping TypeName="SSACModel.TestClientes">
-              <ModificationFunctionMapping>
-                <InsertFunction FunctionName="SSACModel.Store.INSERTA_CLIENTES">
-                  <ScalarProperty Name="nombre" ParameterName="nombre" />
-                  <ScalarProperty Name="id" ParameterName="id" />
-                </InsertFunction>
-              </ModificationFunctionMapping>
-            </EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="ZONA"><EntityTypeMapping TypeName="SSACModel.ZONA"><MappingFragment StoreEntitySet="ZONA">
             <ScalarProperty Name="Codigo" ColumnName="Codigo" />
             <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
@@ -1361,7 +1341,7 @@
     <Diagrams>
       <Diagram Name="Model1">
         <EntityTypeShape EntityType="SSACModel.ARTICULOS" Width="1.5" PointX="7.75" PointY="0.75" Height="2.0853483072916674" IsExpanded="true" />
-        <EntityTypeShape EntityType="SSACModel.CLIENTE" Width="1.5" PointX="3" PointY="6.75" Height="7.0157682291666648" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSACModel.CLIENTE" Width="1.5" PointX="3" PointY="6.75" Height="7.0157682291666639" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.CLIENTECONDGANANCIAS" Width="1.5" PointX="0.75" PointY="1.625" Height="1.4279589843749996" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.CLIENTECONDICIONIVA" Width="1.5" PointX="0.75" PointY="3.75" Height="1.4279589843749996" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.CLIENTECONDINGRBRU" Width="1.5" PointX="0.75" PointY="6" Height="1.4279589843749996" IsExpanded="true" />
@@ -1381,8 +1361,8 @@
         <EntityTypeShape EntityType="SSACModel.TestClientes" Width="1.5" PointX="2.75" PointY="0.75" Height="1.2636116536458388" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.ZONA" Width="1.5" PointX="0.75" PointY="26.5" Height="1.4279589843750031" IsExpanded="true" />
         <AssociationConnector Association="SSACModel.FK_CLIENTE_CLIENTECONDGANANCIAS" ManuallyRouted="false">
-          <ConnectorPoint PointX="2.25" PointY="2.5645353190104192" />
-          <ConnectorPoint PointX="4.40625" PointY="2.5645353190104192" />
+          <ConnectorPoint PointX="2.25" PointY="2.5645353188986606" />
+          <ConnectorPoint PointX="4.40625" PointY="2.5645353188986606" />
           <ConnectorPoint PointX="4.40625" PointY="6.75" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTE_CLIENTECONDICIONIVA" ManuallyRouted="false">
@@ -1391,8 +1371,8 @@
           <ConnectorPoint PointX="3.6718725" PointY="6.75" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTE_CLIENTECONDINGRBRU" ManuallyRouted="false">
-          <ConnectorPoint PointX="2.25" PointY="7.0889794921875" />
-          <ConnectorPoint PointX="3" PointY="7.0889794921875" />
+          <ConnectorPoint PointX="2.25" PointY="7.0889794918770583" />
+          <ConnectorPoint PointX="3" PointY="7.0889794918770583" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTE_CLIENTEESTADO" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="12.8389794921875" />
@@ -1424,34 +1404,34 @@
           <ConnectorPoint PointX="4.1562525" PointY="13.765768229166664" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTECONTACTO_CLIENTE" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="6.9234318033854159" />
-          <ConnectorPoint PointX="5.25" PointY="6.9234318033854159" />
+          <ConnectorPoint PointX="4.5" PointY="6.9234318032301951" />
+          <ConnectorPoint PointX="5.25" PointY="6.9234318032301951" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTEESTABLECIMIENTO_CLIENTE" ManuallyRouted="false">
-          <ConnectorPoint PointX="4.5" PointY="12.926697591145834" />
-          <ConnectorPoint PointX="6.4635396666666667" PointY="12.926697591145834" />
-          <ConnectorPoint PointX="6.6302063333333328" PointY="12.926697591145834" />
-          <ConnectorPoint PointX="7.072916666666667" PointY="12.926697591145834" />
-          <ConnectorPoint PointX="7.239583333333333" PointY="12.926697591145834" />
-          <ConnectorPoint PointX="9" PointY="12.926697591145834" />
+          <ConnectorPoint PointX="4.5" PointY="12.926697591232756" />
+          <ConnectorPoint PointX="6.4635396666666667" PointY="12.926697591232756" />
+          <ConnectorPoint PointX="6.6302063333333328" PointY="12.926697591232756" />
+          <ConnectorPoint PointX="7.072916666666667" PointY="12.926697591232756" />
+          <ConnectorPoint PointX="7.239583333333333" PointY="12.926697591232756" />
+          <ConnectorPoint PointX="9" PointY="12.926697591232756" />
           <ConnectorPoint PointX="9" PointY="11.821432291666667" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTENOCONFORMIDAD_CLIENTE" ManuallyRouted="false">
           <ConnectorPoint PointX="4.3593787499999994" PointY="13.765768229166664" />
-          <ConnectorPoint PointX="4.3593787499999994" PointY="19.292598063151043" />
-          <ConnectorPoint PointX="5.25" PointY="19.292598063151043" />
+          <ConnectorPoint PointX="4.3593787499999994" PointY="19.292598063039286" />
+          <ConnectorPoint PointX="5.25" PointY="19.292598063039286" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTEESTABLECIMIENTO_LUGAR" ManuallyRouted="false">
           <ConnectorPoint PointX="7.5" PointY="10.285716145833334" />
           <ConnectorPoint PointX="8.25" PointY="10.285716145833334" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTEESTIMAGEN_CLIENTEESTABLECIMIENTO" ManuallyRouted="false">
-          <ConnectorPoint PointX="9.75" PointY="9.0658268229166659" />
-          <ConnectorPoint PointX="10.5" PointY="9.0658268229166659" />
+          <ConnectorPoint PointX="9.75" PointY="9.065826822761446" />
+          <ConnectorPoint PointX="10.5" PointY="9.065826822761446" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTELOTE_CLIENTEESTABLECIMIENTO" ManuallyRouted="false">
-          <ConnectorPoint PointX="9.75" PointY="10.973216145833334" />
-          <ConnectorPoint PointX="10.5" PointY="10.973216145833334" />
+          <ConnectorPoint PointX="9.75" PointY="10.973216146143773" />
+          <ConnectorPoint PointX="10.5" PointY="10.973216146143773" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_CLIENTELOTEIMAGEN_CLIENTELOTE" ManuallyRouted="false">
           <ConnectorPoint PointX="12" PointY="11.503326822916668" />
@@ -1467,29 +1447,29 @@
           <ConnectorPoint PointX="1.1249995" PointY="19.953390299479167" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_LUGAR_LOCALIDAD" ManuallyRouted="false">
-          <ConnectorPoint PointX="2.25" PointY="17.65625" />
-          <ConnectorPoint PointX="3.2604141666666666" PointY="17.65625" />
-          <ConnectorPoint PointX="3.4270808333333336" PointY="17.65625" />
-          <ConnectorPoint PointX="4.0729191666666669" PointY="17.65625" />
-          <ConnectorPoint PointX="4.2395858333333329" PointY="17.65625" />
-          <ConnectorPoint PointX="4.2760454166666664" PointY="17.65625" />
-          <ConnectorPoint PointX="4.4427120833333325" PointY="17.65625" />
-          <ConnectorPoint PointX="7.15625" PointY="17.65625" />
+          <ConnectorPoint PointX="2.25" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="3.2604141666666666" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="3.4270808333333336" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="4.2760454166666664" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="4.4427120833333325" PointY="17.656249999913079" />
+          <ConnectorPoint PointX="7.15625" PointY="17.656249999913079" />
           <ConnectorPoint PointX="7.15625" PointY="12.025126953125003" />
         </AssociationConnector>
         <AssociationConnector Association="SSACModel.FK_LUGAR_PAIS" ManuallyRouted="false">
-          <ConnectorPoint PointX="2.25" PointY="9.7829114114583327" />
-          <ConnectorPoint PointX="2.75" PointY="9.7829114114583327" />
-          <ConnectorPoint PointX="2.75" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="3.2604141666666666" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="3.4270808333333336" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="3.6666666666666665" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="3.8333333333333335" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="4.0729191666666669" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="4.2395858333333329" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="4.2760454166666664" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="4.4427120833333325" PointY="14.015768229166664" />
-          <ConnectorPoint PointX="6.546873" PointY="14.015768229166664" />
+          <ConnectorPoint PointX="2.25" PointY="9.7829114114148723" />
+          <ConnectorPoint PointX="2.75" PointY="9.7829114114148723" />
+          <ConnectorPoint PointX="2.75" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="3.2604141666666666" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="3.4270808333333336" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="4.2760454166666664" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="4.4427120833333325" PointY="14.01576822956403" />
+          <ConnectorPoint PointX="6.546873" PointY="14.01576822956403" />
           <ConnectorPoint PointX="6.546873" PointY="12.025126953125003" />
         </AssociationConnector>
       </Diagram>

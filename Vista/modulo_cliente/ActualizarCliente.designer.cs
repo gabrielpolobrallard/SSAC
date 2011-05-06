@@ -28,37 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarCliente));
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Nodo1");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Nodo2");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Nodo3");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Nodo4");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Nodo5");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Nodo0", new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21});
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Nodo3");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Nodo4");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Nodo5");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Nodo0", new System.Windows.Forms.TreeNode[] {
-            treeNode23,
-            treeNode24,
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Nodo6");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Nodo7");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Nodo1", new System.Windows.Forms.TreeNode[] {
-            treeNode27,
-            treeNode28});
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Nodo8");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Nodo9");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Nodo2", new System.Windows.Forms.TreeNode[] {
-            treeNode30,
-            treeNode31});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Nodo1");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Nodo2");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Nodo3");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Nodo4");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Nodo5");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Nodo0", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Nodo3");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Nodo4");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Nodo5");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Nodo0", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8,
+            treeNode9});
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Nodo6");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Nodo7");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Nodo1", new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Nodo8");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Nodo9");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Nodo2", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15});
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,6 +69,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtTest = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -78,6 +80,8 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBoxPais = new System.Windows.Forms.ComboBox();
+            this.sSACEntitiesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txtGeolongitud = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtGeolatitud = new System.Windows.Forms.TextBox();
@@ -250,6 +254,8 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.sSACEntitiesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.sSACEntitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -281,6 +287,7 @@
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -301,6 +308,8 @@
             this.groupBox14.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox17.SuspendLayout();
@@ -390,6 +399,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.txtTest);
             this.tabPage1.Controls.Add(this.btnLimpiar);
             this.tabPage1.Controls.Add(this.btnGuardar);
             this.tabPage1.Controls.Add(this.groupBox5);
@@ -403,6 +413,13 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Informacíon";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtTest
+            // 
+            this.txtTest.Location = new System.Drawing.Point(527, 280);
+            this.txtTest.Name = "txtTest";
+            this.txtTest.Size = new System.Drawing.Size(100, 20);
+            this.txtTest.TabIndex = 6;
             // 
             // btnLimpiar
             // 
@@ -488,6 +505,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.comboBoxPais);
             this.groupBox4.Controls.Add(this.txtGeolongitud);
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.txtGeolatitud);
@@ -508,6 +526,19 @@
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Direccion";
+            // 
+            // comboBoxPais
+            // 
+            this.comboBoxPais.FormattingEnabled = true;
+            this.comboBoxPais.Location = new System.Drawing.Point(92, 208);
+            this.comboBoxPais.Name = "comboBoxPais";
+            this.comboBoxPais.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPais.TabIndex = 14;
+            this.comboBoxPais.SelectedIndexChanged += new System.EventHandler(this.comboBoxPais_SelectedIndexChanged);
+            // 
+            // sSACEntitiesBindingSource1
+            // 
+            this.sSACEntitiesBindingSource1.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
             // 
             // txtGeolongitud
             // 
@@ -1299,12 +1330,12 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Nombre,
             this.Cargo});
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup1";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup2});
+            listViewGroup1});
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(15, 40);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(227, 380);
@@ -1622,43 +1653,43 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(15, 29);
             this.treeView1.Name = "treeView1";
-            treeNode17.Name = "Nodo1";
-            treeNode17.Text = "Nodo1";
-            treeNode18.Name = "Nodo2";
-            treeNode18.Text = "Nodo2";
-            treeNode19.Name = "Nodo3";
-            treeNode19.Text = "Nodo3";
-            treeNode20.Name = "Nodo4";
-            treeNode20.Text = "Nodo4";
-            treeNode21.Name = "Nodo5";
-            treeNode21.Text = "Nodo5";
-            treeNode22.Name = "Nodo0";
-            treeNode22.Text = "Nodo0";
-            treeNode23.Name = "Nodo3";
-            treeNode23.Text = "Nodo3";
-            treeNode24.Name = "Nodo4";
-            treeNode24.Text = "Nodo4";
-            treeNode25.Name = "Nodo5";
-            treeNode25.Text = "Nodo5";
-            treeNode26.Name = "Nodo0";
-            treeNode26.Text = "Nodo0";
-            treeNode27.Name = "Nodo6";
-            treeNode27.Text = "Nodo6";
-            treeNode28.Name = "Nodo7";
-            treeNode28.Text = "Nodo7";
-            treeNode29.Name = "Nodo1";
-            treeNode29.Text = "Nodo1";
-            treeNode30.Name = "Nodo8";
-            treeNode30.Text = "Nodo8";
-            treeNode31.Name = "Nodo9";
-            treeNode31.Text = "Nodo9";
-            treeNode32.Name = "Nodo2";
-            treeNode32.Text = "Nodo2";
+            treeNode1.Name = "Nodo1";
+            treeNode1.Text = "Nodo1";
+            treeNode2.Name = "Nodo2";
+            treeNode2.Text = "Nodo2";
+            treeNode3.Name = "Nodo3";
+            treeNode3.Text = "Nodo3";
+            treeNode4.Name = "Nodo4";
+            treeNode4.Text = "Nodo4";
+            treeNode5.Name = "Nodo5";
+            treeNode5.Text = "Nodo5";
+            treeNode6.Name = "Nodo0";
+            treeNode6.Text = "Nodo0";
+            treeNode7.Name = "Nodo3";
+            treeNode7.Text = "Nodo3";
+            treeNode8.Name = "Nodo4";
+            treeNode8.Text = "Nodo4";
+            treeNode9.Name = "Nodo5";
+            treeNode9.Text = "Nodo5";
+            treeNode10.Name = "Nodo0";
+            treeNode10.Text = "Nodo0";
+            treeNode11.Name = "Nodo6";
+            treeNode11.Text = "Nodo6";
+            treeNode12.Name = "Nodo7";
+            treeNode12.Text = "Nodo7";
+            treeNode13.Name = "Nodo1";
+            treeNode13.Text = "Nodo1";
+            treeNode14.Name = "Nodo8";
+            treeNode14.Text = "Nodo8";
+            treeNode15.Name = "Nodo9";
+            treeNode15.Text = "Nodo9";
+            treeNode16.Name = "Nodo2";
+            treeNode16.Text = "Nodo2";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode22,
-            treeNode26,
-            treeNode29,
-            treeNode32});
+            treeNode6,
+            treeNode10,
+            treeNode13,
+            treeNode16});
             this.treeView1.Size = new System.Drawing.Size(245, 432);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -2139,6 +2170,14 @@
             this.listBox1.Size = new System.Drawing.Size(214, 368);
             this.listBox1.TabIndex = 0;
             // 
+            // sSACEntitiesBindingSource2
+            // 
+            this.sSACEntitiesBindingSource2.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            // 
+            // sSACEntitiesBindingSource
+            // 
+            this.sSACEntitiesBindingSource.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2358,10 +2397,12 @@
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -2397,6 +2438,8 @@
             this.tabPage3.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -2628,5 +2671,10 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateFechaVtoGanancia;
+        private System.Windows.Forms.ComboBox comboBoxPais;
+        private System.Windows.Forms.BindingSource sSACEntitiesBindingSource;
+        private System.Windows.Forms.TextBox txtTest;
+        private System.Windows.Forms.BindingSource sSACEntitiesBindingSource1;
+        private System.Windows.Forms.BindingSource sSACEntitiesBindingSource2;
     }
 }

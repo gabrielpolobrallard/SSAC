@@ -10,6 +10,7 @@ using System.Data.Entity;
 using System.Data.EntityClient;
 using SSAC;
 using SSAC.Modelo.modulo_cliente;
+using System.Data.Objects;
 
 
 
@@ -253,8 +254,24 @@ namespace SSAC
             cli.GananciaCodigo = txtGanaciaCodigo.Text;
             cli.Domicilio = txtDomicilio.Text;
             cli.NroDomicilio = Convert.ToInt32(txtNumDomicilio.Text);
+
+            // Los codigos son en este formato 1001-00 = Capital federal. Hacer un select con LINQ.
             cli.Localidad = txtLocalidad.Text;
+
+            //Los codigos zona (FK) son en formato 045 = cordoba. Hacer un select con LINQ.
             cli.Zona = txtZona.Text;
+            //Codigo pais (FK) formato AR = argentina. Hacer select con linq combobox.
+
+            using (var context = new SSACEntities())
+            {
+
+                context.PAIS.Load();
+                comboBoxPais.DataSource = context.PAIS;
+                comboBoxPais.DisplayMember = "Descripcion";
+
+            }
+
+
             cli.Pais = txtPais.Text;
             cli.Telefono = txtTelefono.Text;
             cli.Fax = txtFax.Text;
@@ -278,6 +295,11 @@ namespace SSAC
             //MessageBox.Show("Agregado a la bd");
             
 
+
+        }
+
+        private void comboBoxPais_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

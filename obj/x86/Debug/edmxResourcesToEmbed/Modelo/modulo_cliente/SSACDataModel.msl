@@ -232,22 +232,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TestClientes">
-      <EntityTypeMapping TypeName="SSACModel.TestClientes">
-        <MappingFragment StoreEntitySet="TestClientes">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombre" ColumnName="nombre" />
-        </MappingFragment>
-      </EntityTypeMapping>
-      <EntityTypeMapping TypeName="SSACModel.TestClientes">
-        <ModificationFunctionMapping>
-          <InsertFunction FunctionName="SSACModel.Store.INSERTA_CLIENTES">
-            <ScalarProperty Name="nombre" ParameterName="nombre" />
-            <ScalarProperty Name="id" ParameterName="id" />
-          </InsertFunction>
-        </ModificationFunctionMapping>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="ZONA">
       <EntityTypeMapping TypeName="SSACModel.ZONA">
         <MappingFragment StoreEntitySet="ZONA">
