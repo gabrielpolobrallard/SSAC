@@ -234,14 +234,48 @@ namespace SSAC
 
             SSACEntities clictx = new SSACEntities();
          
-            TestClientes cliotro = new TestClientes();
-            cliotro.nombre = "Marcelo";
-            cliotro.id = 2;
+            //TestClientes cliotro = new TestClientes();
+            //cliotro.nombre = "Marcelo";
+            //cliotro.id = 432;
+
+            CLIENTE cli = new CLIENTE();
+            cli.NombreFantasia = txtNomFantasia.Text;
+            cli.CUIT = txtCuit.Text;
+            cli.CBU = txtCbu.Text;
+            cli.CondicionGanancia = Convert.ToInt32(txtCondGanancia.Text);
+            cli.NumeroGanancia = txtNumGanacia.Text;
+            cli.CondicionIngBru = Convert.ToInt32(txtCondIngBruto.Text);
+            cli.NumeroIngBru = txtNumIngBruto.Text;         
+            cli.FechaVtoGanancia = dateFechaVtoGanancia.Value;
            
-       
-            clictx.TestClientes.Add(cliotro);
+            cli.CondicionIVA = Convert.ToInt32(txtCondicionIva.Text);
+            cli.NumeroJubilacion = txtNumJubilacion.Text;
+            cli.GananciaCodigo = txtGanaciaCodigo.Text;
+            cli.Domicilio = txtDomicilio.Text;
+            cli.NroDomicilio = Convert.ToInt32(txtNumDomicilio.Text);
+            cli.Localidad = txtLocalidad.Text;
+            cli.Zona = txtZona.Text;
+            cli.Pais = txtPais.Text;
+            cli.Telefono = txtTelefono.Text;
+            cli.Fax = txtFax.Text;
+            cli.EMail = txtEmail.Text;
+            cli.Observacion = txtObservaciones.Text;
+            // la parte de arriba. VER CON MARCELO 
+            cli.Cuenta = txtCuenta.Text;
+            cli.Estado = Convert.ToInt32(txtEstado.Text);
+            cli.Nombre = txtNombre.Text;
+
+            clictx.CLIENTE.Add(cli);
             clictx.SaveChanges();
-            MessageBox.Show("Agregado a la bd");
+
+            MessageBox.Show("Cliente Agregado a la bd ");
+
+
+
+
+         //   clictx.TestClientes.Add(cliotro);
+           // clictx.SaveChanges();
+            //MessageBox.Show("Agregado a la bd");
             
 
 

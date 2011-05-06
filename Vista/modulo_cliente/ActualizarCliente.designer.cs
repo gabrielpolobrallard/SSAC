@@ -60,11 +60,11 @@
             treeNode30,
             treeNode31});
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -95,6 +95,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dateFechaVtoGanancia = new System.Windows.Forms.DateTimePicker();
             this.txtGanaciaCodigo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtNumJubilacion = new System.Windows.Forms.TextBox();
@@ -275,7 +276,6 @@
             this.textBox64 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.textBox65 = new System.Windows.Forms.TextBox();
-            this.dateFechaVtoGanancia = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -308,11 +308,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtEstado);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtCuenta);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 34);
             this.groupBox1.Name = "groupBox1";
@@ -321,14 +321,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
             // 
-            // textBox3
+            // txtEstado
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(581, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(80, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "No editable";
+            this.txtEstado.Location = new System.Drawing.Point(581, 40);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(80, 20);
+            this.txtEstado.TabIndex = 5;
+            this.txtEstado.Text = "No editable";
             // 
             // label3
             // 
@@ -339,15 +338,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Estado :";
             // 
-            // textBox2
+            // txtCuenta
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(69, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(99, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "No editable";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtCuenta.Location = new System.Drawing.Point(69, 40);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(99, 20);
+            this.txtCuenta.TabIndex = 3;
+            this.txtCuenta.Text = "No editable";
+            this.txtCuenta.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -359,15 +357,14 @@
             this.label2.Text = "Cuenta :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(270, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "No editable";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNombre.Location = new System.Drawing.Point(270, 40);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(205, 20);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Text = "No editable";
+            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -677,6 +674,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // dateFechaVtoGanancia
+            // 
+            this.dateFechaVtoGanancia.Location = new System.Drawing.Point(138, 235);
+            this.dateFechaVtoGanancia.Name = "dateFechaVtoGanancia";
+            this.dateFechaVtoGanancia.Size = new System.Drawing.Size(200, 20);
+            this.dateFechaVtoGanancia.TabIndex = 22;
             // 
             // txtGanaciaCodigo
             // 
@@ -2339,13 +2343,6 @@
             this.textBox65.Size = new System.Drawing.Size(100, 20);
             this.textBox65.TabIndex = 0;
             // 
-            // dateFechaVtoGanancia
-            // 
-            this.dateFechaVtoGanancia.Location = new System.Drawing.Point(138, 235);
-            this.dateFechaVtoGanancia.Name = "dateFechaVtoGanancia";
-            this.dateFechaVtoGanancia.Size = new System.Drawing.Size(200, 20);
-            this.dateFechaVtoGanancia.TabIndex = 22;
-            // 
             // ActualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2418,10 +2415,10 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCuenta;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;

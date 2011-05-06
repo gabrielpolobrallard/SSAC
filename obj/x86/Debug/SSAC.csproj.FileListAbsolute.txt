@@ -17,3 +17,12 @@ C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\ResolveAssemblyReference
 C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\SSAC.ActualizarCliente.resources
 C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Admin\Desktop\Nueva carpeta\SSAC\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\bin\Debug\SSAC.exe.config
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\SSAC.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\SSAC.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\bin\Debug\SSAC.exe
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\bin\Debug\SSAC.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\SSAC.ActualizarCliente.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\GenerateResource.write.1.tlog
