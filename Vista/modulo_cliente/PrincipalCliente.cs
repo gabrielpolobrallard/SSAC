@@ -27,7 +27,7 @@ namespace SSAC
 
                 IQueryable<CLIENTE> cliente = context.CLIENTE;
                 cliente.Load();
-                Array clientesArray = (from c in cliente select new { c.Nombre, c.NombreFantasia, c.Estado, c.CLIENTECONDICIONIVA, c.Cuenta, c.Domicilio }).ToArray();
+                Array clientesArray = (from c in cliente select new { c.Cuenta, c.Nombre, c.NombreFantasia,c.FechaUltVta, c.Estado }).ToArray();
                 dataGridViewClientesPrincipal.DataSource = clientesArray;//cliente.ToList();
                 
 
