@@ -26,6 +26,39 @@ namespace SSAC
             InitializeComponent();
 
 
+            //PAIS
+            using (var context = new SSACEntities())
+            {
+
+           IQueryable<PAIS> paises= context.PAIS;
+           paises.Load();
+           comboBoxPaises.DataSource = paises.ToList();
+           comboBoxPaises.DisplayMember = "Descripcion";
+           comboBoxPaises.ValueMember = "Codigo";
+
+
+           IQueryable<ZONA> zonas = context.ZONA;
+           zonas.Load();
+           comboBoxZonas.DataSource = zonas.ToList();
+           comboBoxZonas.DisplayMember = "Descripcion";
+           comboBoxZonas.ValueMember = "Codigo";
+
+
+
+           IQueryable<LOCALIDAD> localidades = context.LOCALIDAD;
+           localidades.Load();
+           comboBoxLocalidades.DataSource = localidades.ToList();
+           comboBoxLocalidades.DisplayMember = "Descripcion";
+           comboBoxLocalidades.ValueMember = "Codigo";
+
+                
+
+                
+
+
+            
+
+            }
            
 
         }
@@ -256,23 +289,16 @@ namespace SSAC
             cli.NroDomicilio = Convert.ToInt32(txtNumDomicilio.Text);
 
             // Los codigos son en este formato 1001-00 = Capital federal. Hacer un select con LINQ.
-            cli.Localidad = txtLocalidad.Text;
+            cli.Localidad = Convert.ToString(comboBoxLocalidades.SelectedValue);
 
             //Los codigos zona (FK) son en formato 045 = cordoba. Hacer un select con LINQ.
-            cli.Zona = txtZona.Text;
+            cli.Zona = Convert.ToString(comboBoxZonas.SelectedValue);
             //Codigo pais (FK) formato AR = argentina. Hacer select con linq combobox.
 
-            using (var context = new SSACEntities())
-            {
-
-                context.PAIS.Load();
-                comboBoxPais.DataSource = context.PAIS;
-                comboBoxPais.DisplayMember = "Descripcion";
-
-            }
+           
 
 
-            cli.Pais = txtPais.Text;
+            cli.Pais = Convert.ToString(comboBoxPaises.SelectedValue);
             cli.Telefono = txtTelefono.Text;
             cli.Fax = txtFax.Text;
             cli.EMail = txtEmail.Text;
@@ -299,6 +325,11 @@ namespace SSAC
         }
 
         private void comboBoxPais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -43,7 +43,6 @@ namespace SSAC.Modelo.modulo_cliente
         public DbSet<LUGAR> LUGAR { get; set; }
         public DbSet<PAIS> PAIS { get; set; }
         public DbSet<PROVINCIA> PROVINCIA { get; set; }
-        public DbSet<TestClientes> TestClientes { get; set; }
         public DbSet<ZONA> ZONA { get; set; }
     }
 }

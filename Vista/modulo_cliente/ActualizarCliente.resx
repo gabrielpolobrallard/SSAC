@@ -121,8 +121,8 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAIAAADCcDA5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOrwAA
-        Dq8BcRFD7gAA/3lJREFUeF7s/YV3XMmd/w+3mSRZzMyyLNkWWJLFzNxiqZlRLTINJ9lkk0wYJjBJhs0o
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOpgAA
+        DqYBh9ypbwAA/3lJREFUeF7s/YV3XMmd/w+3mSRZzMyyLNkWWJLFzNxiqZlRLTINJ9lkk0wYJjBJhs0o
         WWzLNLO739/zPef5g57d53VveXo8UrfHPetskv3F533q1K1bfaHq8/5Q1ZV3vfWHe4ov/+3atUtUqfzX
         f/2Xt/585b8U/z+f7d6LbKt4r/nfbA/0+rt37/b5kz3/9ewd/V3w+Xb6SiMRwC8UAV2fewV0cfrvVQTy
         NP5f0t+8/Od//ufLjMxXff7L9zh75ef5q/2n/Ow+X9lnfzrv+c+9Pp/Hz/V5/P/8r10+XsH/9b+8PEwQ
@@ -2195,15 +2195,6 @@
         gg==
 </value>
   </data>
-  <metadata name="sSACEntitiesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>438, 17</value>
-  </metadata>
-  <metadata name="sSACEntitiesBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 54</value>
-  </metadata>
-  <metadata name="sSACEntitiesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>254, 17</value>
-  </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -3049,6 +3040,18 @@
         gg==
 </value>
   </data>
+  <metadata name="sSACEntitiesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>438, 17</value>
+  </metadata>
+  <metadata name="sSACEntitiesBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <metadata name="sSACEntitiesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>254, 17</value>
+  </metadata>
+  <metadata name="sSACEntitiesBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>207, 54</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>75</value>
   </metadata>

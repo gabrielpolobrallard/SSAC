@@ -91,6 +91,9 @@
     <EmbeddedResource Include="Vista\modulo_cliente\ActualizarCliente.resx">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\modulo_cliente\PrincipalCliente.resx">
+      <DependentUpon>PrincipalCliente.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelo\modulo_cliente\ARTICULOS.cs">
@@ -161,9 +164,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SSACDataModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Modelo\modulo_cliente\TestClientes.cs">
-      <DependentUpon>SSACObjectModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Modelo\modulo_cliente\ZONA.cs">
       <DependentUpon>SSACObjectModel.tt</DependentUpon>

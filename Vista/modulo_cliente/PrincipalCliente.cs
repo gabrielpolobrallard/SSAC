@@ -6,6 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using SSAC.Modelo.modulo_cliente;
+
+
+using System.Data.Entity;
+using System.Data.EntityClient;
+using System.Data.Objects;
 
 namespace SSAC
 {
@@ -14,6 +20,20 @@ namespace SSAC
         public PrincipalCliente()
         {
             InitializeComponent();
+
+            //CONSULTA LINQ PARA LLENAR DATAGRID PRINCIPAL - FALTA VER CLAVES FORANEAS Y QUE CAMPOS VAMOS A CARGAR.
+            using (var context = new SSACEntities())
+            {
+
+                IQueryable<CLIENTE> cliente = context.CLIENTE;
+                cliente.Load();
+                Array clientesArray = (from c in cliente select new { c.Nombre, c.NombreFantasia, c.Estado, c.CLIENTECONDICIONIVA, c.Cuenta, c.Domicilio }).ToArray();
+                dataGridViewClientesPrincipal.DataSource = clientesArray;//cliente.ToList();
+                
+
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,6 +77,16 @@ namespace SSAC
             Form actClie = new ActualizarCliente();
             actClie.Show();
 
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void ListViewClientes_Principal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        
         }
     }
 }

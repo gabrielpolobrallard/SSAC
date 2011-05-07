@@ -19,7 +19,6 @@
     <EntitySet Name="LUGAR" EntityType="SSACModel.LUGAR" />
     <EntitySet Name="PAIS" EntityType="SSACModel.PAIS" />
     <EntitySet Name="PROVINCIA" EntityType="SSACModel.PROVINCIA" />
-    <EntitySet Name="TestClientes" EntityType="SSACModel.TestClientes" />
     <EntitySet Name="ZONA" EntityType="SSACModel.ZONA" />
     <AssociationSet Name="FK_CLIENTE_CLIENTECONDGANANCIAS" Association="SSACModel.FK_CLIENTE_CLIENTECONDGANANCIAS">
       <End Role="CLIENTECONDGANANCIAS" EntitySet="CLIENTECONDGANANCIAS" />
@@ -347,13 +346,6 @@
     <Property Name="CodigoOncca" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
     <Property Name="Exportado" Type="Int32" />
     <NavigationProperty Name="LOCALIDAD" Relationship="SSACModel.FK_LOCALIDAD_PROVINCIA" FromRole="PROVINCIA" ToRole="LOCALIDAD" />
-  </EntityType>
-  <EntityType Name="TestClientes">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="nombre" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
   </EntityType>
   <EntityType Name="ZONA">
     <Key>

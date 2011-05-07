@@ -80,17 +80,14 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.comboBoxPais = new System.Windows.Forms.ComboBox();
-            this.sSACEntitiesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxZonas = new System.Windows.Forms.ComboBox();
+            this.comboBoxPaises = new System.Windows.Forms.ComboBox();
             this.txtGeolongitud = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtGeolatitud = new System.Windows.Forms.TextBox();
-            this.txtPais = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtZona = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtLocalidad = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtNumDomicilio = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -254,8 +251,6 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.sSACEntitiesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.sSACEntitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -282,12 +277,16 @@
             this.textBox64 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.textBox65 = new System.Windows.Forms.TextBox();
+            this.sSACEntitiesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sSACEntitiesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.sSACEntitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sSACEntitiesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxLocalidades = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -308,11 +307,13 @@
             this.groupBox14.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -505,16 +506,15 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.comboBoxPais);
+            this.groupBox4.Controls.Add(this.comboBoxLocalidades);
+            this.groupBox4.Controls.Add(this.comboBoxZonas);
+            this.groupBox4.Controls.Add(this.comboBoxPaises);
             this.groupBox4.Controls.Add(this.txtGeolongitud);
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.txtGeolatitud);
-            this.groupBox4.Controls.Add(this.txtPais);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.txtZona);
             this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.txtLocalidad);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.txtNumDomicilio);
             this.groupBox4.Controls.Add(this.label16);
@@ -527,18 +527,22 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Direccion";
             // 
-            // comboBoxPais
+            // comboBoxZonas
             // 
-            this.comboBoxPais.FormattingEnabled = true;
-            this.comboBoxPais.Location = new System.Drawing.Point(92, 208);
-            this.comboBoxPais.Name = "comboBoxPais";
-            this.comboBoxPais.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxPais.TabIndex = 14;
-            this.comboBoxPais.SelectedIndexChanged += new System.EventHandler(this.comboBoxPais_SelectedIndexChanged);
+            this.comboBoxZonas.FormattingEnabled = true;
+            this.comboBoxZonas.Location = new System.Drawing.Point(92, 107);
+            this.comboBoxZonas.Name = "comboBoxZonas";
+            this.comboBoxZonas.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxZonas.TabIndex = 15;
             // 
-            // sSACEntitiesBindingSource1
+            // comboBoxPaises
             // 
-            this.sSACEntitiesBindingSource1.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            this.comboBoxPaises.FormattingEnabled = true;
+            this.comboBoxPaises.Location = new System.Drawing.Point(92, 130);
+            this.comboBoxPaises.Name = "comboBoxPaises";
+            this.comboBoxPaises.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPaises.TabIndex = 14;
+            this.comboBoxPaises.SelectedIndexChanged += new System.EventHandler(this.comboBoxPais_SelectedIndexChanged);
             // 
             // txtGeolongitud
             // 
@@ -563,13 +567,6 @@
             this.txtGeolatitud.Size = new System.Drawing.Size(100, 20);
             this.txtGeolatitud.TabIndex = 5;
             // 
-            // txtPais
-            // 
-            this.txtPais.Location = new System.Drawing.Point(93, 130);
-            this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(100, 20);
-            this.txtPais.TabIndex = 11;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -588,13 +585,6 @@
             this.label19.TabIndex = 10;
             this.label19.Text = "Pais :";
             // 
-            // txtZona
-            // 
-            this.txtZona.Location = new System.Drawing.Point(93, 104);
-            this.txtZona.Name = "txtZona";
-            this.txtZona.Size = new System.Drawing.Size(100, 20);
-            this.txtZona.TabIndex = 9;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -603,13 +593,6 @@
             this.label18.Size = new System.Drawing.Size(38, 13);
             this.label18.TabIndex = 8;
             this.label18.Text = "Zona :";
-            // 
-            // txtLocalidad
-            // 
-            this.txtLocalidad.Location = new System.Drawing.Point(93, 78);
-            this.txtLocalidad.Name = "txtLocalidad";
-            this.txtLocalidad.Size = new System.Drawing.Size(100, 20);
-            this.txtLocalidad.TabIndex = 7;
             // 
             // label17
             // 
@@ -2170,14 +2153,6 @@
             this.listBox1.Size = new System.Drawing.Size(214, 368);
             this.listBox1.TabIndex = 0;
             // 
-            // sSACEntitiesBindingSource2
-            // 
-            this.sSACEntitiesBindingSource2.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
-            // 
-            // sSACEntitiesBindingSource
-            // 
-            this.sSACEntitiesBindingSource.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2382,6 +2357,30 @@
             this.textBox65.Size = new System.Drawing.Size(100, 20);
             this.textBox65.TabIndex = 0;
             // 
+            // sSACEntitiesBindingSource1
+            // 
+            this.sSACEntitiesBindingSource1.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            // 
+            // sSACEntitiesBindingSource2
+            // 
+            this.sSACEntitiesBindingSource2.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            // 
+            // sSACEntitiesBindingSource
+            // 
+            this.sSACEntitiesBindingSource.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            // 
+            // sSACEntitiesBindingSource3
+            // 
+            this.sSACEntitiesBindingSource3.DataSource = typeof(SSAC.Modelo.modulo_cliente.SSACEntities);
+            // 
+            // comboBoxLocalidades
+            // 
+            this.comboBoxLocalidades.FormattingEnabled = true;
+            this.comboBoxLocalidades.Location = new System.Drawing.Point(93, 81);
+            this.comboBoxLocalidades.Name = "comboBoxLocalidades";
+            this.comboBoxLocalidades.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxLocalidades.TabIndex = 16;
+            // 
             // ActualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2402,7 +2401,6 @@
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -2438,13 +2436,15 @@
             this.tabPage3.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sSACEntitiesBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2492,12 +2492,9 @@
         private System.Windows.Forms.TextBox txtGeolongitud;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtGeolatitud;
-        private System.Windows.Forms.TextBox txtPais;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtZona;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtLocalidad;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtNumDomicilio;
         private System.Windows.Forms.Label label16;
@@ -2671,10 +2668,13 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateFechaVtoGanancia;
-        private System.Windows.Forms.ComboBox comboBoxPais;
+        private System.Windows.Forms.ComboBox comboBoxPaises;
         private System.Windows.Forms.BindingSource sSACEntitiesBindingSource;
         private System.Windows.Forms.TextBox txtTest;
         private System.Windows.Forms.BindingSource sSACEntitiesBindingSource1;
         private System.Windows.Forms.BindingSource sSACEntitiesBindingSource2;
+        private System.Windows.Forms.BindingSource sSACEntitiesBindingSource3;
+        private System.Windows.Forms.ComboBox comboBoxZonas;
+        private System.Windows.Forms.ComboBox comboBoxLocalidades;
     }
 }

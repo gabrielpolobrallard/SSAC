@@ -577,7 +577,6 @@
           <EntitySet Name="LUGAR" EntityType="SSACModel.LUGAR" />
           <EntitySet Name="PAIS" EntityType="SSACModel.PAIS" />
           <EntitySet Name="PROVINCIA" EntityType="SSACModel.PROVINCIA" />
-          <EntitySet Name="TestClientes" EntityType="SSACModel.TestClientes" />
           <EntitySet Name="ZONA" EntityType="SSACModel.ZONA" />
           <AssociationSet Name="FK_CLIENTE_CLIENTECONDGANANCIAS" Association="SSACModel.FK_CLIENTE_CLIENTECONDGANANCIAS">
             <End Role="CLIENTECONDGANANCIAS" EntitySet="CLIENTECONDGANANCIAS" />
@@ -905,13 +904,6 @@
           <Property Name="CodigoOncca" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
           <Property Name="Exportado" Type="Int32" />
           <NavigationProperty Name="LOCALIDAD" Relationship="SSACModel.FK_LOCALIDAD_PROVINCIA" FromRole="PROVINCIA" ToRole="LOCALIDAD" />
-        </EntityType>
-        <EntityType Name="TestClientes">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="nombre" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
         </EntityType>
         <EntityType Name="ZONA">
           <Key>
@@ -1358,7 +1350,6 @@
         <EntityTypeShape EntityType="SSACModel.LUGAR" Width="1.5" PointX="6" PointY="8.625" Height="3.4001269531250031" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.PAIS" Width="1.5" PointX="0.75" PointY="9.375" Height="1.7566536458333388" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.PROVINCIA" Width="1.5" PointX="1.5" PointY="24" Height="1.7566536458333388" IsExpanded="true" />
-        <EntityTypeShape EntityType="SSACModel.TestClientes" Width="1.5" PointX="2.75" PointY="0.75" Height="1.2636116536458388" IsExpanded="true" />
         <EntityTypeShape EntityType="SSACModel.ZONA" Width="1.5" PointX="0.75" PointY="26.5" Height="1.4279589843750031" IsExpanded="true" />
         <AssociationConnector Association="SSACModel.FK_CLIENTE_CLIENTECONDGANANCIAS" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="2.5645353188986606" />

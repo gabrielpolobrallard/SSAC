@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,12 +48,14 @@
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientePotencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirListadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-           
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridViewClientesPrincipal = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-           
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -124,6 +125,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.panel1);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(12, 163);
             this.groupBox2.Name = "groupBox2";
@@ -239,13 +241,22 @@
             this.imprimirListadoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.imprimirListadoToolStripMenuItem.Text = "Imprimir Listado";
             // 
-            // modClientesDataSet
+            // panel1
             // 
-            
+            this.panel1.Controls.Add(this.dataGridViewClientesPrincipal);
+            this.panel1.Location = new System.Drawing.Point(24, 75);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(722, 415);
+            this.panel1.TabIndex = 6;
             // 
-            // cLIENTETableAdapter
+            // dataGridViewClientesPrincipal
             // 
-            
+            this.dataGridViewClientesPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClientesPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewClientesPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewClientesPrincipal.Name = "dataGridViewClientesPrincipal";
+            this.dataGridViewClientesPrincipal.Size = new System.Drawing.Size(722, 415);
+            this.dataGridViewClientesPrincipal.TabIndex = 0;
             // 
             // PrincipalCliente
             // 
@@ -266,7 +277,8 @@
             this.groupBox3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-           
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,6 +306,8 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientePotencialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imprimirListadoToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridViewClientesPrincipal;
   
     }
 }

@@ -26,3 +26,4 @@ C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\ResolveA
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\SSAC.ActualizarCliente.resources
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\SSAC\obj\x86\Debug\SSAC.PrincipalCliente.resources
