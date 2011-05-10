@@ -36,6 +36,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridViewClientesPrincipal = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -48,14 +50,12 @@
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientePotencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirListadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridViewClientesPrincipal = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesPrincipal)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -133,6 +133,24 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado Clientes";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridViewClientesPrincipal);
+            this.panel1.Location = new System.Drawing.Point(24, 75);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(722, 415);
+            this.panel1.TabIndex = 6;
+            // 
+            // dataGridViewClientesPrincipal
+            // 
+            this.dataGridViewClientesPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClientesPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewClientesPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewClientesPrincipal.Name = "dataGridViewClientesPrincipal";
+            this.dataGridViewClientesPrincipal.Size = new System.Drawing.Size(722, 415);
+            this.dataGridViewClientesPrincipal.TabIndex = 0;
+            this.dataGridViewClientesPrincipal.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientesPrincipal_CellContentDoubleClick);
             // 
             // groupBox3
             // 
@@ -241,23 +259,6 @@
             this.imprimirListadoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.imprimirListadoToolStripMenuItem.Text = "Imprimir Listado";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dataGridViewClientesPrincipal);
-            this.panel1.Location = new System.Drawing.Point(24, 75);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(722, 415);
-            this.panel1.TabIndex = 6;
-            // 
-            // dataGridViewClientesPrincipal
-            // 
-            this.dataGridViewClientesPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewClientesPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewClientesPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewClientesPrincipal.Name = "dataGridViewClientesPrincipal";
-            this.dataGridViewClientesPrincipal.Size = new System.Drawing.Size(722, 415);
-            this.dataGridViewClientesPrincipal.TabIndex = 0;
-            // 
             // PrincipalCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,12 +274,12 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesPrincipal)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

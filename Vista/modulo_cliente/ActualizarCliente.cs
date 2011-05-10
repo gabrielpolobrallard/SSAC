@@ -20,49 +20,95 @@ namespace SSAC
 {
     public partial class ActualizarCliente : Form
     {
-        
-        public ActualizarCliente()
+
+        public ActualizarCliente(CLIENTE cargarCliente = null)
         {
             InitializeComponent();
 
-
-            //PAIS
-            using (var context = new SSACEntities())
+            if (cargarCliente != null)
             {
 
-           IQueryable<PAIS> paises= context.PAIS;
-           paises.Load();
-           comboBoxPaises.DataSource = paises.ToList();
-           comboBoxPaises.DisplayMember = "Descripcion";
-           comboBoxPaises.ValueMember = "Codigo";
+                //Cargo el cliente q recibi
+                txtNomFantasia.Text = cargarCliente.NombreFantasia;
+                txtCuit.Text = cargarCliente.CUIT;
+                txtCbu.Text = cargarCliente.CBU;
+                txtCondGanancia.Text = Convert.ToString(cargarCliente.CondicionGanancia);
+                txtNumGanacia.Text = cargarCliente.NumeroGanancia;
+                txtCondIngBruto.Text = Convert.ToString(cargarCliente.CondicionIngBru);
+                txtNumIngBruto.Text = cargarCliente.NumeroIngBru;
+                dateFechaVtoGanancia.Value = Convert.ToDateTime(cargarCliente.FechaVtoGanancia);
+
+                txtCondicionIva.Text = Convert.ToString(cargarCliente.CondicionIVA);
+                txtNumJubilacion.Text = cargarCliente.NumeroJubilacion;
+                txtGanaciaCodigo.Text = cargarCliente.GananciaCodigo;
+                txtDomicilio.Text = cargarCliente.Domicilio;
+                txtNumDomicilio.Text = Convert.ToString(cargarCliente.NroDomicilio);
+
+                // Los codigos son en este formato 1001-00 = Capital federal. Hacer un select con LINQ.
+                comboBoxLocalidades.SelectedValue = cargarCliente.Localidad;
+
+                //Los codigos zona (FK) son en formato 045 = cordoba. Hacer un select con LINQ.
+                comboBoxZonas.SelectedValue = cargarCliente.Zona;
+                //Codigo pais (FK) formato AR = argentina. Hacer select con linq combobox.
 
 
-           IQueryable<ZONA> zonas = context.ZONA;
-           zonas.Load();
-           comboBoxZonas.DataSource = zonas.ToList();
-           comboBoxZonas.DisplayMember = "Descripcion";
-           comboBoxZonas.ValueMember = "Codigo";
 
 
+                comboBoxPaises.SelectedValue = cargarCliente.Pais;
+                txtTelefono.Text = cargarCliente.Telefono;
+                txtFax.Text = cargarCliente.Fax;
+                txtEmail.Text = cargarCliente.EMail;
+                txtObservaciones.Text = cargarCliente.Observacion;
+                // la parte de arriba. VER CON MARCELO 
+                txtCuenta.Text = cargarCliente.Cuenta;
+                txtEstado.Text = Convert.ToString(cargarCliente.Estado);
+                txtNombre.Text = cargarCliente.Nombre;
 
-           IQueryable<LOCALIDAD> localidades = context.LOCALIDAD;
-           localidades.Load();
-           comboBoxLocalidades.DataSource = localidades.ToList();
-           comboBoxLocalidades.DisplayMember = "Descripcion";
-           comboBoxLocalidades.ValueMember = "Codigo";
-
-                
-
-                
-
-
-            
+                txtCuenta.Enabled = false;
+                txtEstado.Enabled = false;
+                txtNombre.Enabled = false;
 
             }
-           
+            else
+            {
+                //PAIS
+                using (var context = new SSACEntities())
+                {
+
+                    IQueryable<PAIS> paises = context.PAIS;
+                    paises.Load();
+                    comboBoxPaises.DataSource = paises.ToList();
+                    comboBoxPaises.DisplayMember = "Descripcion";
+                    comboBoxPaises.ValueMember = "Codigo";
+
+
+                    IQueryable<ZONA> zonas = context.ZONA;
+                    zonas.Load();
+                    comboBoxZonas.DataSource = zonas.ToList();
+                    comboBoxZonas.DisplayMember = "Descripcion";
+                    comboBoxZonas.ValueMember = "Codigo";
+
+
+
+                    IQueryable<LOCALIDAD> localidades = context.LOCALIDAD;
+                    localidades.Load();
+                    comboBoxLocalidades.DataSource = localidades.ToList();
+                    comboBoxLocalidades.DisplayMember = "Descripcion";
+                    comboBoxLocalidades.ValueMember = "Codigo";
+
+
+
+
+
+
+
+
+                }
+            }
+
 
         }
-       
+
 
 
         private void label1_Click(object sender, EventArgs e)
@@ -264,10 +310,10 @@ namespace SSAC
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
-          
+
 
             SSACEntities clictx = new SSACEntities();
-         
+
             //TestClientes cliotro = new TestClientes();
             //cliotro.nombre = "Marcelo";
             //cliotro.id = 432;
@@ -279,9 +325,9 @@ namespace SSAC
             cli.CondicionGanancia = Convert.ToInt32(txtCondGanancia.Text);
             cli.NumeroGanancia = txtNumGanacia.Text;
             cli.CondicionIngBru = Convert.ToInt32(txtCondIngBruto.Text);
-            cli.NumeroIngBru = txtNumIngBruto.Text;         
+            cli.NumeroIngBru = txtNumIngBruto.Text;
             cli.FechaVtoGanancia = dateFechaVtoGanancia.Value;
-           
+
             cli.CondicionIVA = Convert.ToInt32(txtCondicionIva.Text);
             cli.NumeroJubilacion = txtNumJubilacion.Text;
             cli.GananciaCodigo = txtGanaciaCodigo.Text;
@@ -295,7 +341,7 @@ namespace SSAC
             cli.Zona = Convert.ToString(comboBoxZonas.SelectedValue);
             //Codigo pais (FK) formato AR = argentina. Hacer select con linq combobox.
 
-           
+
 
 
             cli.Pais = Convert.ToString(comboBoxPaises.SelectedValue);
@@ -316,10 +362,10 @@ namespace SSAC
 
 
 
-         //   clictx.TestClientes.Add(cliotro);
-           // clictx.SaveChanges();
+            //   clictx.TestClientes.Add(cliotro);
+            // clictx.SaveChanges();
             //MessageBox.Show("Agregado a la bd");
-            
+
 
 
         }
